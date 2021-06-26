@@ -1,0 +1,3 @@
+Sitemap: https://icaros.usc.edu/sitemap.xml
+User-agent: *
+Disallow:
