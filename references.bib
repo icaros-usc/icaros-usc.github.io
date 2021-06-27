@@ -1,0 +1,549 @@
+% ICAROS Lab Publications
+
+@inproceedings{fontaine2021importance,
+    title={On the Importance of Environments in Human-Robot Coordination},
+    author={Matthew C. Fontaine and Ya-Chuan Hsu and Yulun Zhang and Bryon Tjakana and Stefanos Nikolaidis},
+    year={2021},
+    month={July},
+    url={https://arxiv.org/abs/2106.10853},
+    booktitle={Proceedings of Robotics: Science and Systems},
+    doi={10.15607/RSS.2021.XVII.038},
+    abstract={When studying robots collaborating with humans, much of the focus has been on robot policies that coordinate fluently with human teammates in collaborative tasks. However, less emphasis has been placed on the effect of the environment on coordination behaviors. To thoroughly explore environments that result in diverse behaviors, we propose a framework for procedural generation of environments that are (1) stylistically similar to human-authored environments, (2) guaranteed to be solvable by the human-robot team, and (3) diverse with respect to coordination measures. We analyze the procedurally generated environments in the Overcooked benchmark domain via simulation and an online user study. Results show that the environments result in qualitatively different emerging behaviors and statistically significant differences in collaborative fluency metrics, even when the robot runs the same planning algorithm.}
+}
+
+@inproceedings{fontaine2021shared,
+    title={A Quality Diversity Approach to Automatically Generating Human-Robot
+           Interaction Scenarios in Shared Autonomy},
+    author={Matthew C. Fontaine and Stefanos Nikolaidis},
+    year={2021},
+    month={July},
+    url={https://arxiv.org/abs/2012.04283},
+    booktitle={Proceedings of Robotics: Science and Systems},
+    doi={10.15607/RSS.2021.XVII.036},
+    abstract={The growth of scale and complexity of interactions between humans and robots highlights the need for new computational methods to automatically evaluate novel algorithms and applications. Exploring diverse scenarios of humans and robots interacting in simulation can improve understanding of the robotic system and avoid potentially costly failures in real-world settings. We formulate this problem as a quality diversity (QD) problem, where the goal is to discover diverse failure scenarios by simultaneously exploring both environments and human actions. We focus on the shared autonomy domain, where the robot attempts to infer the goal of a human operator, and adopt the QD algorithm MAP-Elites to generate scenarios for two published algorithms in this domain: shared autonomy via hindsight optimization and linear policy blending. Some of the generated scenarios confirm previous theoretical findings, while others are surprising and bring about a new understanding of state-of-the-art implementations. Our experiments show that MAP-Elites outperforms Monte-Carlo simulation and optimization based methods in effectively searching the scenario space, highlighting its promise for automatic evaluation of algorithms in human-robot interaction.}
+}
+
+@article{tang2021learning,
+  title={Learning Collaborative Pushing and Grasping Policies in Dense Clutter},
+  author={Tang, Bingjie and Corsaro, Matthew and Konidaris, George and Nikolaidis, Stefanos and Tellex, Stefanie},
+  journal={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2021},
+  month={May},
+  url={https://cs.brown.edu/~gdk/pubs/push_grasp_clutter.pdf},
+  abstract={Robots must reason about pushing and grasping in order to engage in flexible manipulation in cluttered environments. Earlier works on learning pushing and grasping only consider each operation in isolation or are limited to top-down grasping and bin-picking. We train a robot to learn joint planar pushing and 6-degree-of-freedom (6-DoF) grasping policies by self-supervision. Two separate deep neural networks are trained to map from 3D visual observations to actions with a Q-learning framework. With collaborative pushes and expanded grasping action space, our system can deal with cluttered scenes with a wide variety of objects (e.g. grasping a plate from the side after pushing away surrounding obstacles). We compare our system to the state-of-the-art baseline model VPG in simulation and outperform it with 10% higher action efficiency and 20% higher grasp success rate. We then demonstrate our system on a KUKA LBR iiwa arm with a Robotiq 3-finger gripper.}
+}
+
+@article{nemlekar2021twostage,
+  title={Two-Stage Clustering of Human Preferences for Action Prediction in
+         Assembly Tasks},
+  author={Heramb Nemlekar and Jignesh Modi and Satyandra K. Gupta and Stefanos Nikolaidis},
+  journal={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2021},
+  month={May},
+  url={https://arxiv.org/abs/2103.14994},
+  abstract={To effectively assist human workers in assembly tasks a robot must proactively offer support by inferring their preferences in sequencing the task actions. Previous work has focused on learning the dominant preferences of human workers for simple tasks largely based on their intended goal. However, people may have preferences at different resolutions: they may share the same high-level preference for the order of the sub-tasks but differ in the sequence of individual actions. We propose a two-stage approach for learning and inferring the preferences of human operators based on the sequence of sub-tasks and actions. We conduct an IKEA assembly study and demonstrate how our approach is able to learn the dominant preferences in a complex task. We show that our approach improves the prediction of human actions through cross-validation. Lastly, we show that our two-stage approach improves the efficiency of task execution in an online experiment, and demonstrate its applicability in a real-world robot-assisted IKEA assembly.}
+}
+
+@article{fontaine2021illuminating,
+  title={Illuminating Mario Scenes in the Latent Space of a Generative Adversarial Network},
+  volume={35},
+  url={https://arxiv.org/abs/2007.05674},
+  journal={AAAI Conference on Artificial Intelligence},
+  author={Matthew C. Fontaine and Ruilin Liu and Ahmed Khalifa and Jignesh Modi and Julian Togelius and Amy K. Hoover and Stefanos Nikolaidis},
+  year={2021},
+  month={February},
+  abstract={Generative adversarial networks (GANs) are quickly becoming a ubiquitous approach to procedurally generating video game levels. While GAN generated levels are stylistically similar to human-authored examples, human designers often want to explore the generative design space of GANs to extract interesting levels. However, human designers find latent vectors opaque and would rather explore along dimensions the designer specifies, such as number of enemies or obstacles. We propose using state-of-the-art quality diversity algorithms designed to optimize continuous spaces, i.e. MAP-Elites with a directional variation operator and Covariance Matrix Adaptation MAP-Elites, to efficiently explore the latent space of a GAN to extract levels that vary across a set of specified gameplay measures. In the benchmark domain of Super Mario Bros, we demonstrate how designers may specify gameplay measures to our system and extract high-quality (playable) levels with a diverse range of level mechanics, while still maintaining stylistic similarity to human authored examples. An online user study shows how the different mechanics of the automatically generated levels affect subjective ratings of their perceived difficulty and appearance.}
+}
+
+@article{fontaine2021differentiable,
+  title={Differentiable Quality Diversity},
+  author={Matthew C. Fontaine and Stefanos Nikolaidis},
+  year={2021},
+  month={June},
+  url={https://arxiv.org/abs/2106.03894},
+  journal={CoRR},
+  volume={abs/2012.04283},
+  archivePrefix={arXiv},
+  eprint={2012.04283},
+  abstract={Quality diversity (QD) is a growing branch of stochastic optimization research that studies the problem of generating an archive of solutions that maximize a given objective function but are also diverse with respect to a set of specified measure functions. However, even when these functions are differentiable, QD algorithms treat them as "black boxes", ignoring gradient information. We present the differentiable quality diversity (DQD) problem, a special case of QD, where both the objective and measure functions are first order differentiable. We then present MAP-Elites via Gradient Arborescence (MEGA), a DQD algorithm that leverages gradient information to efficiently explore the joint range of the objective and measure functions. Results in two QD benchmark domains and in searching the latent space of a StyleGAN show that MEGA significantly outperforms state-of-the-art QD algorithms, highlighting DQD's promise for efficient quality diversity optimization when gradient information is available.},
+}
+
+@article{chen2020trust,
+  author = {Chen, Min and Nikolaidis, Stefanos and Soh, Harold and Hsu, David and Srinivasa, Siddhartha},
+  title = {Trust-Aware Decision Making for Human-Robot Collaboration: Model Learning and Planning},
+  year = {2020},
+  issue_date = {February 2020},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {9},
+  number = {2},
+  url = {https://doi.org/10.1145/3359616},
+  doi = {10.1145/3359616},
+  abstract = {Trust in autonomy is essential for effective human-robot collaboration and user adoption of autonomous systems such as robot assistants. This article introduces a computational model that integrates trust into robot decision making. Specifically, we learn from data a partially observable Markov decision process (POMDP) with human trust as a latent variable. The trust-POMDP model provides a principled approach for the robot to (i) infer the trust of a human teammate through interaction, (ii) reason about the effect of its own actions on human trust, and (iii) choose actions that maximize team performance over the long term. We validated the model through human subject experiments on a table clearing task in simulation (201 participants) and with a real robot (20 participants). In our studies, the robot builds human trust by manipulating low-risk objects first.  Interestingly, the robot sometimes fails intentionally to modulate human trust and achieve the best team performance. These results show that the trust-POMDP calibrates trust to improve human-robot team performance over the long term. Further, they highlight that maximizing trust alone does not always lead to the best performance.},
+  journal = {J. Hum.-Robot Interact.},
+  month = jan,
+  articleno = {9},
+  numpages = {23},
+  keywords = {human-robot collaboration, Trust models, partially observable Markov decision process (POMDP)}
+}
+
+@InProceedings{puranic2020signal,
+  title = {Learning from Demonstrations using Signal Temporal Logic},
+  author = {Aniruddh Puranic and Jyotirmoy Deshmukh and Stefanos Nikolaidis},
+  booktitle = {Conference on Robot Learning},
+  year = {2020},
+  month = {November},
+  abstract = {We present a model-based reinforcement learning framework for robot locomotion that achieves walking based on only 4.5 minutes of data collected on a quadruped robot. To accurately model the robot’s dynamics over a long horizon, we introduce a loss function that tracks the model’s prediction over multiple timesteps. We adapt model predictive control to account for planning latency, which allows the learned model to be used for real time control. Additionally, to ensure safe exploration during model learning, we embed prior knowledge of leg trajectories into the action space. The resulting system achieves fast and robust locomotion. Unlike model-free methods, which optimize for a particular task, our planner can use the same learned dynamics for various tasks, simply by changing the reward function.1 To the best of our knowledge, our approach is more than an order of magnitude more sample efficient than current model-free methods.}
+}
+
+@INPROCEEDINGS{9341753,
+  author={Yoon, Seung Hee and Nikolaidis, Stefanos},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={Robot Learning in Mixed Adversarial and Collaborative Settings},
+  year={2020},
+  month={January},
+  volume={},
+  number={},
+  pages={9329-9336},
+  doi={10.1109/IROS45743.2020.9341753},
+  abstract={Previous work has shown that interacting with a human adversary can significantly improve the efficiency of the learning process in robot grasping. However, people are not consistent in applying adversarial forces; instead they may alternate between acting antagonistically with the robot or helping the robot achieve its tasks. We propose a physical framework for robot learning in a mixed adversarial/collaborative setting, where a second agent may act as a collaborator or as an antagonist, unbeknownst to the robot. The framework leverages prior estimates of the reward function to infer whether the actions of the second agent are collaborative or adversarial. Integrating the inference in an adversarial learning algorithm can significantly improve the robustness of learned grasps in a manipulation task.},
+}
+
+@article{zhang2020repair,
+  title={Video Game Level Repair via Mixed Integer Linear Programming},
+  volume={16},
+  url={https://ojs.aaai.org/index.php/AIIDE/article/view/7424},
+  abstract={Recent advancements in procedural content generation via machine learning enable the generation of video-game levels that are aesthetically similar to human-authored examples. However, the generated levels are often unplayable without additional editing. We propose a “generate-then-repair” framework for automatic generation of playable levels adhering to specific styles. The framework constructs levels using a generative adversarial network (GAN) trained with human-authored examples and repairs them using a mixed-integer linear program (MIP) with playability constraints. A key component of the framework is computing minimum cost edits between the GAN generated level and the solution of the MIP solver, which we cast as a minimum cost network flow problem. Results show that the proposed framework generates a diverse range of playable levels, that capture the spatial relationships between objects exhibited in the human-authored levels.},
+  number={1},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+  author={Zhang, Hejia and Fontaine, Matthew and Hoover, Amy and Togelius, Julian and Dilkina, Bistra and Nikolaidis, Stefanos},
+  year={2020},
+  month={Oct.},
+  pages={151-158}
+}
+
+@inproceedings{fontaine2020covariance,
+  author = {Fontaine, Matthew C. and Togelius, Julian and Nikolaidis, Stefanos and Hoover, Amy K.},
+  title = {Covariance Matrix Adaptation for the Rapid Illumination of Behavior Space},
+  year = {2020},
+  month = {June},
+  isbn = {9781450371285},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3377930.3390232},
+  doi = {10.1145/3377930.3390232},
+  abstract = {We focus on the challenge of finding a diverse collection of quality solutions on complex continuous domains. While quality diversity (QD) algorithms like Novelty Search with Local Competition (NSLC) and MAP-Elites are designed to generate a diverse range of solutions, these algorithms require a large number of evaluations for exploration of continuous spaces. Meanwhile, variants of the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) are among the best-performing derivative-free optimizers in single-objective continuous domains. This paper proposes a new QD algorithm called Covariance Matrix Adaptation MAP-Elites (CMA-ME). Our new algorithm combines the self-adaptation techniques of CMA-ES with archiving and mapping techniques for maintaining diversity in QD. Results from experiments based on standard continuous optimization benchmarks show that CMA-ME finds better-quality solutions than MAP-Elites; similarly, results on the strategic game Hearthstone show that CMA-ME finds both a higher overall quality and broader diversity of strategies than both CMA-ES and MAP-Elites. Overall, CMA-ME more than doubles the performance of MAP-Elites using standard QD performance metrics. These results suggest that QD algorithms augmented by operators from state-of-the-art optimization algorithms can yield high-performing methods for simultaneously exploring and optimizing continuous search spaces, with significant applications to design, testing, and reinforcement learning among other domains.},
+  booktitle = {Proceedings of the 2020 Genetic and Evolutionary Computation Conference},
+  pages = {94–102},
+  numpages = {9},
+  keywords = {hearthstone, evolutionary algorithms, MAP-Elites, optimization, quality diversity, illumination algorithms},
+  location = {Canc'{u}n, Mexico},
+  series = {GECCO '20}
+}
+
+@InProceedings{chen2020experiments,
+  title = {Fair Contextual Multi-Armed Bandits: Theory and Experiments},
+  author = {Chen, Yifang and Cuellar, Alex and Luo, Haipeng and Modi, Jignesh and Nemlekar, Heramb and Nikolaidis, Stefanos},
+  booktitle = {Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI)},
+  pages = {181--190},
+  year = {2020},
+  editor = {Jonas Peters and David Sontag},
+  volume = {124},
+  series = {Proceedings of Machine Learning Research},
+  month = {03--06 Aug},
+  publisher = {PMLR},
+  pdf = {http://proceedings.mlr.press/v124/chen20a/chen20a.pdf},
+  url = { http://proceedings.mlr.press/v124/chen20a.html },
+  abstract = {When an AI system interacts with multiple users, it frequently needs to make allocation decisions. For instance, a virtual agent decides whom to pay attention to in a group, or a factory robot selects a worker to deliver a part.Demonstrating fairness in decision making is essential for such systems to be broadly accepted. We introduce a Multi-Armed Bandit algorithm with fairness constraints, where fairness is defined as a minimum rate at which a task or a resource is assigned to a user. The proposed algorithm uses contextual information about the users and the task and makes no assumptions on how the losses capturing the performance of different users are generated. We provide theoretical guarantees of performance and empirical results from simulation and an online user study. The results highlight the benefit of accounting for contexts in fair decision making, especially when users perform better at some contexts and worse at others.},
+}
+
+@inproceedings{chen2020bandit,
+  author = {Chen, Yifang and Cuellar, Alex and Luo, Haipeng and Modi, Jignesh and Nemlekar, Heramb and Nikolaidis, Stefanos},
+  title = {The Fair Contextual Multi-Armed Bandit},
+  year = {2020},
+  month = {May},
+  isbn = {9781450375184},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  address = {Richland, SC},
+  abstract = {When an AI system interacts with multiple users, it frequently needs to make allocation decisions. For instance, a virtual agent decides whom to pay attention to in a group setting, or a factory robot selects a worker to deliver a part. Demonstrating fairness in decision making is essential for such systems to be broadly accepted. We introduce a Multi-Armed Bandit algorithm with fairness constraints, where fairness is defined as a minimum rate that a task or a resource is assigned to a user. The proposed algorithm uses contextual information about the users and the task and makes no assumptions on how the losses capturing the performance of different users are generated. We view this as an exciting step towards including fairness constraints in resource allocation decisions.},
+  booktitle = {Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems},
+  pages = {1810–1812},
+  numpages = {3},
+  keywords = {multi-armed bandits, resource allocation, fairness},
+  location = {Auckland, New Zealand},
+  series = {AAMAS '20}
+}
+
+@inproceedings{claure2020bandits,
+  author = {Claure, Houston and Chen, Yifang and Modi, Jignesh and Jung, Malte and Nikolaidis, Stefanos},
+  title = {Multi-Armed Bandits with Fairness Constraints for Distributing Resources to Human Teammates},
+  year = {2020},
+  month = {March},
+  isbn = {9781450367462},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3319502.3374806},
+  doi = {10.1145/3319502.3374806},
+  abstract = {How should a robot that collaborates with multiple people decide upon the distribution of resources (e.g. social attention, or parts needed for an assembly)? People are uniquely attuned to how resources are distributed. A decision to distribute more resources to one team member than another might be perceived as unfair with potentially detrimental effects for trust. We introduce a multi-armed bandit algorithm with fairness constraints, where a robot distributes resources to human teammates of different skill levels. In this problem, the robot does not know the skill level of each human teammate, but learns it by observing their performance over time. We define fairness as a constraint on the minimum rate that each human teammate is selected throughout the task. We provide theoretical guarantees on performance and perform a large-scale user study, where we adjust the level of fairness in our algorithm. Results show that fairness in resource distribution has a significant effect on users' trust in the system.},
+  booktitle = {Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {299–308},
+  numpages = {10},
+  keywords = {reinforcement learning, multi-armed bandits, trust, fairness},
+  location = {Cambridge, United Kingdom},
+  series = {HRI '20}
+}
+
+@inproceedings{pocius2020haptic,
+  author = {Pocius, Rey and Zamani, Naghmeh and Culbertson, Heather and Nikolaidis, Stefanos},
+  title = {Communicating Robot Goals via Haptic Feedback in Manipulation Tasks},
+  year = {2020},
+  month = {March},
+  isbn = {9781450370578},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3371382.3377444},
+  doi = {10.1145/3371382.3377444},
+  abstract = {In shared autonomy, human teleoperation blends with intelligent robot autonomy to create robot control. This combination enables assistive robot manipulators to help human operators by predicting and reaching the human's desired target. However, this reduces the control authority of the user and the transparency of the interaction. This negatively affects their willingness to use the system. We propose haptic feedback as a seamless and natural way for the robot to communicate information to the user and assist them in completing the task. A proof-of-concept demonstration of our system illustrates the effectiveness of haptic feedback in communicating the robot's goals to the user. We hypothesize that this can be an effective way to improve performance in teleoperated manipulation tasks, while retaining the control authority of the user.},
+  booktitle = {Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {591–593},
+  numpages = {3},
+  keywords = {manipulation, teleoperation, haptics, human-robot collaboration},
+  location = {Cambridge, United Kingdom},
+  series = {HRI '20}
+}
+
+@article{DBLP:journals/corr/abs-1911-10686,
+  author    = {Hejia Zhang and
+               Stefanos Nikolaidis},
+  title     = {Robot Learning and Execution of Collaborative Manipulation Plans from
+               YouTube Videos},
+  journal   = {CoRR},
+  volume    = {abs/1911.10686},
+  year      = {2019},
+  month     = {February},
+  url       = {http://arxiv.org/abs/1911.10686},
+  archivePrefix = {arXiv},
+  eprint    = {1911.10686},
+  timestamp = {Tue, 03 Dec 2019 14:15:54 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1911-10686.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {People often watch videos on the web to learn how to cook new recipes, assemble furniture or repair a computer. We wish to enable robots with the very same capability. This is challenging; there is a large variation in manipulation actions and some videos even involve multiple persons, who collaborate by sharing and exchanging objects and tools. Furthermore, the learned representations need to be general enough to be transferable to robotic systems. On the other hand, previous work has shown that the space of human manipulation actions has a linguistic, hierarchical structure that relates actions to manipulated objects and tools. Building upon this theory of language for action, we propose a framework for understanding and executing demonstrated action sequences from full-length, unconstrained cooking videos on the web. The framework takes as input a cooking video annotated with object labels and bounding boxes, and outputs a collaborative manipulation action plan for one or more robotic arms. We demonstrate performance of the system in a standardized dataset of 100 YouTube cooking videos, as well as in three full-length Youtube videos that include collaborative actions between two participants. We additionally propose an open-source platform for executing the learned plans in a simulation environment as well as with an actual robotic arm.}
+}
+
+@INPROCEEDINGS{duan2019adversarial,
+  author={Duan, Jiali and Wang, Qian and Pinto, Lerrel and Jay Kuo, C.-C. and Nikolaidis, Stefanos},
+  booktitle={2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={Robot Learning via Human Adversarial Games},
+  year={2019},
+  month={November},
+  volume={},
+  number={},
+  pages={1056-1063},
+  doi={10.1109/IROS40897.2019.8968306},
+  abstract={Much work in robotics has focused on “human-in-the-loop” learning techniques that improve the efficiency of the learning process. However, these algorithms have made the strong assumption of a cooperating human supervisor that assists the robot. In reality, human observers tend to also act in an adversarial manner towards deployed robotic systems. We show that this can in fact improve the robustness of the learned models by proposing a physical framework that leverages perturbations applied by a human adversary, guiding the robot towards more robust models. In a manipulation task, we show that grasping success improves significantly when the robot trains with a human adversary as compared to training in a self-supervised manner.},
+}
+
+@inproceedings {zhang2019youtube,
+  author={Hejia Zhang and Po-Jen Lai and Sayan Paul and Suraj Kothawade and Stefanos Nikolaidis},
+  title={Learning Collaborative Action Plans from Unlabeled YouTube Videos},
+  booktitle={Robotics Research, The 19th International Symposium, {ISRR} 2019},
+  location={Hanoi, Vietnam},
+  year={2019},
+  month={October},
+  abstract={Videos from the World Wide Web provide a rich source of information that robots could use to acquire knowledge about manipulation tasks. Previous work has focused on generating action sequences from unconstrained videos for a single robot performing manipulation tasks by itself. However, robots operating in the same physical space with people need to not only perform actions autonomously, but also coordinate seamlessly with their human counterparts. This often requires representing and executing collaborative manipulation actions, such as handing over a tool or holding an object for the other agent. We present a system for knowledge acquisition of collaborative manipulation action plans that outputs commands to the robot in the form of visual sentence. We show the performance of the system in 12 unlabeled action clips taken from collaborative cooking videos on YouTube. We view this as the first step towards extracting collaborative manipulation action sequences from unconstrained, unlabeled online videos.},
+}
+
+@INPROCEEDINGS{klein2019surprise,
+  author={Klein, Lauren and Itti, Laurent and Smith, Beth A. and Rosales, Marcelo and Nikolaidis, Stefanos and Matarić, Maja J.},
+  booktitle={2019 28th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)},
+  title={Surprise! Predicting Infant Visual Attention in a Socially Assistive Robot Contingent Learning Paradigm},
+  year={2019},
+  month={October},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.1109/RO-MAN46459.2019.8956385},
+  abstract={Early intervention to address developmental disability in infants has the potential to promote improved outcomes in neurodevelopmental structure and function [1]. Researchers are starting to explore Socially Assistive Robotics (SAR) as a tool for delivering early interventions that are synergistic with and enhance human-administered therapy. For SAR to be effective, the robot must be able to consistently attract the attention of the infant in order to engage the infant in a desired activity. This work presents the analysis of eye gaze tracking data from five 6-8 month old infants interacting with a Nao robot that kicked its leg as a contingent reward for infant leg movement. We evaluate a Bayesian model of low-level surprise on video data from the infants' head-mounted camera and on the timing of robot behaviors as a predictor of infant visual attention. The results demonstrate that over 67% of infant gaze locations were in areas the model evaluated to be more surprising than average. We also present an initial exploration using surprise to predict the extent to which the robot attracts infant visual attention during specific intervals in the study. This work is the first to validate the surprise model on infants; our results indicate the potential for using surprise to inform robot behaviors that attract infant attention during SAR interactions.}
+}
+
+@INPROCEEDINGS{weng2019projections,
+  author={Weng, Thomas and Perlmutter, Leah and Nikolaidis, Stefanos and Srinivasa, Siddhartha and Cakmak, Maya},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  title={Robot Object Referencing through Legible Situated Projections},
+  year={2019},
+  month={May},
+  volume={},
+  number={},
+  pages={8004-8010},
+  doi={10.1109/ICRA.2019.8793638},
+  abstract={The ability to reference objects in the environment is a key communication skill that robots need for complex, task-oriented human-robot collaborations. In this paper we explore the use of projections, which are a powerful communication channel for robot-to-human information transfer as they allow for situated, instantaneous, and parallelized visual referencing.  We focus on the question of what makes a good projection for referencing a target object. To that end, we mathematically formulatelegibility of projections intended to reference an object, and propose alternative arrow-object match functions for optimally computing the placement of an arrow to indicate a target object in a cluttered scene. We implement our approach on a PR2 robot with a head-mounted projector. Through an online (48 participants) and an in-person (12 participants) user study we validate the effectiveness of our approach, identify the types of scenes where projections may fail, and characterize the differences between alternative match functions.}
+}
+
+@article{DBLP:journals/corr/abs-1810-00146,
+  author    = {Hejia Zhang and
+               Eric Heiden and
+               Ryan Julian and
+               Zhangpeng He and
+               Joseph J. Lim and
+               Gaurav S. Sukhatme},
+  title     = {Auto-conditioned Recurrent Mixture Density Networks for Complex Trajectory
+               Generation},
+  journal   = {CoRR},
+  volume    = {abs/1810.00146},
+  year      = {2018},
+  month     = {March},
+  url       = {http://arxiv.org/abs/1810.00146},
+  archivePrefix = {arXiv},
+  eprint    = {1810.00146},
+  timestamp = {Tue, 30 Oct 2018 10:49:09 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1810-00146.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {Personal robots assisting humans must perform complex manipulation tasks that are typically difficult to specify in traditional motion planning pipelines, where multiple objectives must be met and the high-level context be taken into consideration. Learning from demonstration (LfD) provides a promising way to learn these kind of complex manipulation skills even from non-technical users. However, it is challenging for existing LfD methods to efficiently learn skills that can generalize to task specifications that are not covered by demonstrations. In this paper, we introduce a state transition model (STM) that generates joint-space trajectories by imitating motions from expert behavior. Given a few demonstrations, we show in real robot experiments that the learned STM can quickly generalize to unseen tasks and synthesize motions having longer time horizons than the expert trajectories. Compared to conventional motion planners, our approach enables the robot to accomplish complex behaviors from high-level instructions without laborious hand-engineering of planning objectives, while being able to adapt to changing goals during the skill execution. In conjunction with a trajectory optimizer, our STM can construct a high-quality skeleton of a trajectory that can be further improved in smoothness and precision. In combination with a learned inverse dynamics model, we additionally present results where the STM is used as a high-level planner.}
+}
+
+@article{nikolaidis2018verbal,
+  author = {Nikolaidis, Stefanos and Kwon, Minae and Forlizzi, Jodi and Srinivasa, Siddhartha},
+  title = {Planning with Verbal Communication for Human-Robot Collaboration},
+  year = {2018},
+  issue_date = {December 2018},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {7},
+  number = {3},
+  url = {https://doi.org/10.1145/3203305},
+  doi = {10.1145/3203305},
+  abstract = {Human collaborators coordinate effectively their actions through both verbal and non-verbal communication. We believe that the the same should hold for human-robot teams. We propose a formalism that enables a robot to decide optimally between taking a physical action toward task completion and issuing an utterance to the human teammate. We focus on two types of utterances: verbal commands, where the robot asks the human to take a physical action, and state-conveying actions, where the robot informs the human about its internal state, which captures the information that the robot uses in its decision making. Human subject experiments show that enabling the robot to issue verbal commands is the most effective form of communicating objectives, while retaining user trust in the robot. Communicating information about the robot’s state should be done judiciously, since many participants questioned the truthfulness of the robot statements when the robot did not provide sufficient explanation about its actions.},
+  journal = {J. Hum.-Robot Interact.},
+  month = nov,
+  articleno = {22},
+  numpages = {21},
+  keywords = {planning under uncertainty, partially observable Markov decision process, Human-robot collaboration, verbal communication}
+}
+
+@inproceedings{chen2018trust,
+  author = {Chen, Min and Nikolaidis, Stefanos and Soh, Harold and Hsu, David and Srinivasa, Siddhartha},
+  title = {Planning with Trust for Human-Robot Collaboration},
+  year = {2018},
+  month = {February},
+  isbn = {9781450349536},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3171221.3171264},
+  doi = {10.1145/3171221.3171264},
+  abstract = {Trust is essential for human-robot collaboration and user adoption of autonomous systems, such as robot assistants. This paper introduces a computational model which integrates trust into robot decision-making. Specifically, we learn from data a partially observable Markov decision process (POMDP) with human trust as a latent variable. The trust-POMDP model provides a principled approach for the robot to (i) infer the trust of a human teammate through interaction, (ii) reason about the effect of its own actions on human behaviors, and (iii) choose actions that maximize team performance over the long term. We validated the model through human subject experiments on a table-clearing task in simulation (201 participants) and with a real robot (20 participants). The results show that the trust-POMDP improves human-robot team performance in this task. They further suggest that maximizing trust in itself may not improve team performance.},
+  booktitle = {Proceedings of the 2018 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {307–315},
+  numpages = {9},
+  keywords = {human-robot collaboration, partially observable markov decision process (pomdp), trust models},
+  location = {Chicago, IL, USA},
+  series = {HRI '18}
+}
+
+@article{nikolaidis2017adaptation,
+  author = {Stefanos Nikolaidis and David Hsu and Siddhartha Srinivasa},
+  title ={Human-robot mutual adaptation in collaborative tasks: Models and experiments},
+  journal = {The International Journal of Robotics Research},
+  volume = {36},
+  number = {5-7},
+  pages = {618-634},
+  year = {2017},
+  month = {February},
+  doi = {10.1177/0278364917690593},
+  eprint = {https://doi.org/10.1177/0278364917690593},
+  abstract = {Adaptation is critical for effective team collaboration. This paper introduces a computational formalism for mutual adaptation between a robot and a human in collaborative tasks. We propose the Bounded-Memory Adaptation Model, which is a probabilistic finite-state controller that captures human adaptive behaviors under a bounded-memory assumption. We integrate the Bounded-Memory Adaptation Model into a probabilistic decision process, enabling the robot to guide adaptable participants towards a better way of completing the task. Human subject experiments suggest that the proposed formalism improves the effectiveness of human-robot teams in collaborative tasks, when compared with one-way adaptations of the robot to the human, while maintaining the human’s trust in the robot.}
+}
+
+@inproceedings{nikolaidis2017game,
+  author = {Nikolaidis, Stefanos and Nath, Swaprava and Procaccia, Ariel D. and Srinivasa, Siddhartha},
+  title = {Game-Theoretic Modeling of Human Adaptation in Human-Robot Collaboration},
+  year = {2017},
+  month = {March},
+  isbn = {9781450343367},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2909824.3020253},
+  doi = {10.1145/2909824.3020253},
+  abstract = {In human-robot teams, humans often start with an inaccurate model of the robot capabilities. As they interact with the robot, they infer the robot's capabilities and partially adapt to the robot, i.e., they might change their actions based on the observed outcomes and the robot's actions, without replicating the robot's policy. We present a game-theoretic model of human partial adaptation to the robot, where the human responds to the robot's actions by maximizing a reward function that changes stochastically over time, capturing the evolution of their expectations of the robot's capabilities. The robot can then use this model to decide optimally between taking actions that reveal its capabilities to the human and taking the best action given the information that the human currently has. We prove that under certain observability assumptions, the optimal policy can be computed efficiently. We demonstrate through a human subject experiment that the proposed model significantly improves human-robot team performance, compared to policies that assume complete adaptation of the human to the robot.},
+  booktitle = {Proceedings of the 2017 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {323–331},
+  numpages = {9},
+  keywords = {human-robot collaboration, human adaptation, game-theory},
+  location = {Vienna, Austria},
+  series = {HRI '17}
+}
+
+@inproceedings{nikolaidis2017mutual,
+  author = {Nikolaidis, Stefanos and Zhu, Yu Xiang and Hsu, David and Srinivasa, Siddhartha},
+  title = {Human-Robot Mutual Adaptation in Shared Autonomy},
+  year = {2017},
+  month = {March},
+  isbn = {9781450343367},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2909824.3020252},
+  doi = {10.1145/2909824.3020252},
+  abstract = {Shared autonomy integrates user input with robot autonomy in order to control a robot and help the user to complete a task. Our work aims to improve the performance of such a human-robot team: the robot tries to guide the human towards an effective strategy, sometimes against the human's own preference, while still retaining his trust. We achieve this through a principled human-robot mutual adaptation formalism. We integrate a bounded-memory adaptation model of the human into a partially observable stochastic decision model, which enables the robot to adapt to an adaptable human. When the human is adaptable, the robot guides the human towards a good strategy, maybe unknown to the human in advance. When the human is stubborn and not adaptable, the robot complies with the human's preference in order to retain their trust. In the shared autonomy setting, unlike many other common human-robot collaboration settings, only the robot actions can change the physical state of the world, and the human and robot goals are not fully observable. We address these challenges and show in a human subject experiment that the proposed mutual adaptation formalism improves human-robot team performance, while retaining a high level of user trust in the robot, compared to the common approach of having the robot strictly following participants' preference.},
+  booktitle = {Proceedings of the 2017 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {294–302},
+  numpages = {9},
+  keywords = {planning under uncertainty, human-robot mutual adaptation, shared autonomy},
+  location = {Vienna, Austria},
+  series = {HRI '17}
+}
+
+@inproceedings{nikolaidis2016mutual,
+  author = {Nikolaidis, Stefanos and Kuznetsov, Anton and Hsu, David and Srinivasa, Siddharta},
+  title = {Formalizing Human-Robot Mutual Adaptation: A Bounded Memory Model},
+  year = {2016},
+  month = {March},
+  isbn = {9781467383707},
+  publisher = {IEEE Press},
+  abstract = {Mutual adaptation is critical for effective team collaboration. This paper presents a formalism for human-robot mutual adaptation in collaborative tasks. We propose the bounded-memory adaptation model (BAM), which captures human adaptive behaviours based on a bounded memory assumption. We integrate BAM into a partially observable stochastic model, which enables robot adaptation to the human. When the human is adaptive, the robot will guide the human towards a new, optimal collaborative strategy unknown to the human in advance. When the human is not willing to change their strategy, the robot adapts to the human in order to retain human trust. Human subject experiments indicate that the proposed formalism can significantly improve the effectiveness of human-robot teams, while human subject ratings on the robot performance and trust are comparable to those achieved by cross training, a state-of-the-art human-robot team training practice.},
+  booktitle = {The Eleventh ACM/IEEE International Conference on Human Robot Interaction},
+  pages = {75–82},
+  numpages = {8},
+  keywords = {human-robot mutual adaptation, bounded memory, human-robot collaboration},
+  location = {Christchurch, New Zealand},
+  series = {HRI '16}
+}
+
+@inproceedings{nikolaidis2016legibility,
+  author = {Nikolaidis, Stefanos and Dragan, Anca and Srinivasa, Siddharta},
+  title = {Viewpoint-Based Legibility Optimization},
+  year = {2016},
+  month = {March},
+  isbn = {9781467383707},
+  publisher = {IEEE Press},
+  abstract = {Much robotics research has focused on intent-expressive (legible) motion.  However, algorithms that can autonomously generate legible motion have implicitly made the strong assumption of an omniscient observer, with access to the robot's configuration as it changes across time. In reality, human observers have a particular viewpoint, which biases the way they perceive the motion.In this work, we free robots from this assumption and introduce the notion of an observer with a specific point of view into legibility optimization. In doing so, we account for two factors: (1) depth uncertainty induced by a particular viewpoint, and (2) occlusions along the motion, during which (part of) the robot is hidden behind some object. We propose viewpoint and occlusion models that enable autonomous generation of viewpoint-based legible motions, and show through large-scale user studies that the produced motions are significantly more legible compared to those generated assuming an omniscient observer.},
+  booktitle = {The Eleventh ACM/IEEE International Conference on Human Robot Interaction},
+  pages = {271–278},
+  numpages = {8},
+  keywords = {observer viewpoint, human-robot collaboration, trajectory optimization, conveying intent},
+  location = {Christchurch, New Zealand},
+  series = {HRI '16}
+}
+
+@article{nikolaidis2015ijrr,
+  author = {Stefanos Nikolaidis and Przemyslaw Lasota and Ramya Ramakrishnan and Julie Shah},
+  title ={Improved human–robot team performance through cross-training, an approach inspired by human team training practices},
+  journal = {The International Journal of Robotics Research},
+  volume = {34},
+  number = {14},
+  pages = {1711-1730},
+  year = {2015},
+  month = {November},
+  doi = {10.1177/0278364915609673},
+  eprint = {https://doi.org/10.1177/0278364915609673},
+  abstract = {We design and evaluate a method of human–robot cross-training, a validated and widely used strategy for the effective training of human teams.  Cross-training is an interactive planning method in which team members iteratively switch roles with one another to learn a shared plan for the performance of a collaborative task.We first present a computational formulation of the robot mental model, which encodes the sequence of robot actions necessary for task completion and the expectations of the robot for preferred human actions, and show that the robot model is quantitatively comparable to the mental model that captures the inter-role knowledge held by the human. Additionally, we propose a quantitative measure of robot mental model convergence and an objective metric of model similarity. Based on this encoding, we formulate a human–robot cross-training method and evaluate its efficacy through experiments involving human subjects (n=60).  We compare human–robot cross-training to standard reinforcement learning techniques, and show that cross-training yields statistically significant improvements in quantitative team performance measures, as well as significant differences in perceived robot performance and human trust.  Finally, we discuss the objective measure of robot mental model convergence as a method to dynamically assess human errors. This study supports the hypothesis that the effective and fluent teaming of a human and a robot may best be achieved by modeling known, effective human teamwork practices.}
+}
+
+@inproceedings{nikolaidis2015joint,
+  author = {Nikolaidis, Stefanos and Ramakrishnan, Ramya and Gu, Keren and Shah, Julie},
+  title = {Efficient Model Learning from Joint-Action Demonstrations for Human-Robot Collaborative Tasks},
+  year = {2015},
+  month = {March},
+  isbn = {9781450328838},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2696454.2696455},
+  doi = {10.1145/2696454.2696455},
+  abstract = {We present a framework for automatically learning human user models from joint-action demonstrations that enables a robot to compute a robust policy for a collaborative task with a human. First, the demonstrated action sequences are clustered into different human types using an unsupervised learning algorithm. A reward function is then learned for each type through the employment of an inverse reinforcement learning algorithm. The learned model is then incorporated into a mixed-observability Markov decision process (MOMDP) formulation, wherein the human type is a partially observable variable. With this framework, we can infer online the human type of a new user that was not included in the training set, and can compute a policy for the robot that will be aligned to the preference of this user. In a human subject experiment (n=30), participants agreed more strongly that the robot anticipated their actions when working with a robot incorporating the proposed framework (p&lt;0.01), compared to manually annotating robot actions. In trials where participants faced difficulty annotating the robot actions to complete the task, the proposed framework significantly improved team efficiency (p&lt;0.01). The robot incorporating the framework was also found to be more responsive to human actions compared to policies computed using a hand-coded reward function by a domain expert (p&lt;0.01). These results indicate that learning human user models from joint-action demonstrations and encoding them in a MOMDP formalism can support effective teaming in human-robot collaborative tasks.},
+  booktitle = {Proceedings of the Tenth Annual ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {189–196},
+  numpages = {8},
+  keywords = {model learning, human-robot collaboration, mixed observability markov decision process},
+  location = {Portland, Oregon, USA},
+  series = {HRI '15}
+}
+
+@inproceedings{nikolaidis2013training,
+  author = {Nikolaidis, Stefanos and Shah, Julie},
+  title = {Human-Robot Cross-Training: Computational Formulation, Modeling and Evaluation of a Human Team Training Strategy},
+  year = {2013},
+  month = {March},
+  isbn = {9781467330558},
+  publisher = {IEEE Press},
+  abstract = {We design and evaluate human-robot cross-training, a strategy widely used and validated for effective human team training. Cross-training is an interactive planning method in which a human and a robot iteratively switch roles to learn a shared plan for a collaborative task.We first present a computational formulation of the robot's interrole knowledge and show that it is quantitatively comparable to the human mental model. Based on this encoding, we formulate human-robot cross-training and evaluate it in human subject experiments (n = 36). We compare human-robot cross-training to standard reinforcement learning techniques, and show that cross-training provides statistically significant improvements in quantitative team performance measures. Additionally, significant differences emerge in the perceived robot performance and human trust. These results support the hypothesis that effective and fluent human-robot teaming may be best achieved by modeling effective practices for human teamwork.},
+  booktitle = {Proceedings of the 8th ACM/IEEE International Conference on Human-Robot Interaction},
+  pages = {33–40},
+  numpages = {8},
+  keywords = {cross-training, shared mental models, human-robot team fluency},
+  location = {Tokyo, Japan},
+  series = {HRI '13}
+}
+
+@INPROCEEDINGS{wilcox2012rss,
+    AUTHOR    = {Ronald Wilcox and Stefanos Nikolaidis and Julie Shah},
+    TITLE     = {Optimization of Temporal Dynamics for Adaptive Human-Robot Interaction in Assembly Manufacturing},
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems},
+    YEAR      = {2012},
+    ADDRESS   = {Sydney, Australia},
+    MONTH     = {July},
+    DOI       = {10.15607/RSS.2012.VIII.056},
+    abstract = {Human-robot collaboration presents an opportunity to improve the efficiency of manufacturing and assembly processes, particularly for aerospace manufacturing where tight integration and variability in the build process make physical isolation of robotic-only work challenging. In this paper, we develop a robotic scheduling and control capability that adapts to the changing preferences of a human co-worker or supervisor while providing strong guarantees for synchronization and timing of activities. This innovation is realized through dynamic execution of a flexible optimal scheduling policy that accommodates temporal disturbance.  We describe the Adaptive Preferences Algorithm that computes the flexible scheduling policy and show empirically that execution is fast, robust, and adaptable to changing preferences for workflow. We achieve satisfactory computation times, on the order of seconds for moderately-sized problems, and demonstrate the capability for human-robot teaming using a small industrial robot.},
+}
+
+@INPROCEEDINGS{nikolaidis2009arrangement,
+  author={Nikolaidis, Stefanos and Arai, Tamio},
+  booktitle={RO-MAN 2009 - The 18th IEEE International Symposium on Robot and Human Interactive Communication},
+  title={Optimal arrangement of ceiling cameras for home service robots using genetic algorithms},
+  year={2009},
+  month={September},
+  volume={},
+  number={},
+  pages={573-580},
+  doi={10.1109/ROMAN.2009.5326341},
+  abstract={In the near future robots will be used in home environments to provide assistance for the elderly and challenged people. As home environments are complicated, external sensors like ceiling cameras need to be placed on the environment to provide the robot with information about its position. The pose of cameras influences the area covered by the cameras, as well as the error of the robot localization. We examine the problem of the finding the arrangement of ceiling cameras at home environments that maximizes the area covered and minimizes the localization error. Genetic algorithms are proposed for the single and multi-objective optimization problem. Simulation results indicate that we can obtain the optimal arrangement of cameras that satisfies the given objectives and the required constraints.}
+}
+
+@inproceedings{nikolaidis2009placement,
+  author={Nikolaidis, Stefanos and Ueda, Ryuichi and Hayashi, Akinobu and Arai, Tamio},
+  booktitle={2008 IEEE International Conference on Robotics and Biomimetics},
+  title={Optimal camera placement considering mobile robot trajectory},
+  year={2009},
+  month={February},
+  volume={},
+  number={},
+  pages={1393-1396},
+  doi={10.1109/ROBIO.2009.4913204},
+  abstract={In the near future robots will be used in home environments to provide assistance for the elderly and challenged people. The arrangement of sensors influences greatly the quality of information provided to the robot. We, therefore, examine the problem of the optimal arrangement of vision sensors for the case of a robot following a pre-defined path. A methodology to evaluate the arrangement of sensors is proposed, focusing on the case of a home environment with ceiling cameras. Simulation results indicate that we can obtain sub-optimal and practical arrangement with the minimum number of sensors which satisfies the necessary condition.},
+}
+
+@inbook{ueda2009pose,
+  author="Ueda, Ryuichi and Nikolaidis, Stefanos and Hayashi, Akinobu and Arai, Tamio",
+  editor="Asama, Hajime and Kurokawa, Haruhisa and Ota, Jun and Sekiyama, Kosuke",
+  title="Global Pose Estimation of Multiple Cameras with Particle Filters",
+  bookTitle="Distributed Autonomous Robotic Systems 8",
+  year="2009",
+  month="January",
+  publisher="Springer Berlin Heidelberg",
+  address="Berlin, Heidelberg",
+  pages="73--82",
+  abstract="Though image processing algorithms are sophisticated and provided as software libraries, it is still difficult to assure that complicated programs can work in various situations. In this paper, we propose a novel global pose estimation method for network cameras to actualize auto-calibration. This method uses native information from images. The sets of partial information are integrated with particle filters. Though some kinds of limitation still exist in the method, we can verify that the particle filters can deal with the nonlinearity of estimation with the experiment.",
+  isbn="978-3-642-00644-9",
+  doi="10.1007/978-3-642-00644-9_7",
+  url="https://doi.org/10.1007/978-3-642-00644-9_7"
+}
+
+@inproceedings{gkiokas2008detection,
+  author={Aggelos Gkiokas and Kostas Perifanos and Stefanos Nikolaidis},
+  booktitle={Proceedings of the 11th International Conference on Digital Audio Effects},
+  title={Real-Time Detection And Visualization of Clarinet Bad Sounds},
+  year={2008},
+  month={September},
+  abstract={This paper describes an approach on real-time performance visualization in the context of music education. A tool is described that produces sound visualizations during a student performance that are intuitively linked to common mistakes frequently observed in the performances of novice to intermediate students. The paper discusses the case of clarinet students. Nevertheless, the approach is also well suited for a wide range of wind or other instruments where similar mistakes are often encountered.},
+}
+
+@inproceedings{prachya2007rfid,
+  author={Kamol, Prachya and Nikolaidis, Stefanos and Ueda, Ryuichi and Arai, Tamio},
+  booktitle={Future Generation Communication and Networking (FGCN 2007)},
+  title={RFID Based Object Localization System Using Ceiling Cameras with Particle Filter},
+  year={2007},
+  month={December},
+  volume={2},
+  number={},
+  pages={37-42},
+  doi={10.1109/FGCN.2007.194},
+  url={https://ieeexplore.ieee.org/document/4426200},
+  abstract={In this paper, we propose an object localization method for home environments. This method utilizes RFID equipments, a mobile robot and some ceiling cameras. The RFID system estimates a rough position of each object. The autonomous robot with RFID antennas explores the environment so as to detect other objects on the floor. Each object that is attached an RFID tag, is then recognized by utilizing its feature information stored in this tag. Finally, the precise localization of each object is achieved by the ceiling cameras with particle filters. The accuracy and the robustness of the proposed method are verified through an experiment.},
+}
