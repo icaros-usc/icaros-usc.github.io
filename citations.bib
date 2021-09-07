@@ -1,5 +1,54 @@
 % ICAROS Lab Publications
 
+@article{fontaine2021evaluating,
+    author={Matthew C. Fontaine and Stefanos Nikolaidis},
+    year={2021},
+    title={Evaluating human-robot interaction algorithms in shared autonomy via quality diversity scenario generation},
+    journal={ACM Transactions on Human-Robot Interaction (THRI) (in press)},
+}
+
+@article{selvaggio2021survey,
+    author={Selvaggio, Mario and Cognetti, Marco and Nikolaidis, Stefanos and Ivaldi, Serena and Siciliano, Bruno},
+    journal={IEEE Robotics and Automation Letters},
+    title={Autonomy in Physical Human-Robot Interaction: A Brief Survey},
+    year={2021},
+    volume={6},
+    number={4},
+    pages={7989-7996},
+    doi={10.1109/LRA.2021.3100603},
+    abstract={Sharing the control of a robotic system with an autonomous controller allows a human to reduce his/her cognitive and physical workload during the execution of a task. In recent years, the development of inference and learning techniques has widened the spectrum of applications of shared control (SC) approaches, leading to robotic systems that are capable of seamless adaptation of their autonomy level. In this perspective, shared autonomy (SA) can be defined as the design paradigm that enables this adapting behavior of the robotic system. This letter collects the latest results achieved by the research community in the field of SC and SA with special emphasis on physical human-robot interaction (pHRI). Architectures and methods developed for SC and SA are discussed throughout the letter, highlighting the key aspects of each methodology. A discussion about open issues concludes this letter.}
+}
+
+@article{puranic2021signal,
+    author={Gopinath Puranic, Aniruddh and V. Deshmukh, Jyotirmoy and Nikolaidis, Stefanos},
+    journal={IEEE Robotics and Automation Letters},
+    title={Learning From Demonstrations Using Signal Temporal Logic in Stochastic and Continuous Domains},
+    year={2021},
+    volume={6},
+    number={4},
+    pages={6250-6257},
+    doi={10.1109/LRA.2021.3092676},
+    abstract={Learning control policies that are safe, robust and interpretable are prominent challenges in developing robotic systems. Learning-from-demonstrations with formal logic is an arising paradigm in reinforcement learning to estimate rewards and extract robot control policies that seek to overcome these challenges. In this approach, we assume that mission-level specifications for the robotic system are expressed in a suitable temporal logic such as Signal Temporal Logic (STL). The main idea is to automatically infer rewards from user demonstrations (that could be suboptimal or incomplete) by evaluating and ranking them w.r.t. the given STL specifications. In contrast to existing work that focuses on deterministic environments and discrete state spaces, in this letter, we propose significant extensions that tackle stochastic environments and continuous state spaces.}
+}
+
+@inproceedings{dennler2021combing,
+  author={Dennler, Nathaniel and Shin, Eura and Matarić, Maja and Nikolaidis, Stefanos},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={Design and Evaluation of a Hair Combing System Using a General-Purpose Robotic Arm},
+  year={2021},
+  month={October},
+  abstract={This work introduces an approach for automatic hair combing by a lightweight robot. For people living with limited mobility, dexterity, or chronic fatigue, combing hair is often a difficult task that negatively impacts personal routines. We propose a modular system for enabling general robot manipulators to assist with a hair-combing task. The system consists of three main components. The first component is the segmentation module, which segments the location of hair in space. The second component is the path planning module that proposes automatically-generated paths through hair based on user input. The final component creates a trajectory for the robot to execute. We quantitatively evaluate the effectiveness of the paths planned by the system with 48 users and qualitatively evaluate the system with 30 users watching videos of the robot performing a hair-combing task in the physical world. The system is shown to effectively comb different hairstyles.},
+}
+
+@inproceedings{nemlekar2021lime,
+  author={Heramb Nemlekar and Ziang Liu and Suraj Kothawade and Sherdil Niyaz and Barath Raghavan and Stefanos Nikolaidis},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={Robotic lime picking by considering leaves as permeable obstacles},
+  year={2021},
+  month={October},
+  abstract={The problem of robotic lime picking is challenging; lime plants have dense foliage which makes it difficult for a robotic arm to grasp a lime without coming in contact with leaves. Existing approaches either do not consider leaves, or treat them as obstacles and completely avoid them, often resulting in undesirable or infeasible plans. We focus on reaching a lime in the presence of dense foliage by considering the leaves of a plant as 'permeable obstacles' with a collision cost. We then adapt the rapidly exploring random tree star (RRT*) algorithm for the problem of fruit harvesting by incorporating the cost of collision with leaves into the path cost. To reduce the time required for finding low-cost paths to goal, we bias the growth of the tree using an artificial potential field (APF). We compare our proposed method with prior work in a 2-D environment and a 6-DOF robot simulation. Our experiments and a real-world demonstration on a robotic lime picking task demonstrate the applicability of our approach.}
+}
+
 @inproceedings{fontaine2021importance,
     title={On the Importance of Environments in Human-Robot Coordination},
     author={Matthew C. Fontaine and Ya-Chuan Hsu and Yulun Zhang and Bryon Tjanaka and Stefanos Nikolaidis},
@@ -21,6 +70,16 @@
     booktitle={Proceedings of Robotics: Science and Systems},
     doi={10.15607/RSS.2021.XVII.036},
     abstract={The growth of scale and complexity of interactions between humans and robots highlights the need for new computational methods to automatically evaluate novel algorithms and applications. Exploring diverse scenarios of humans and robots interacting in simulation can improve understanding of the robotic system and avoid potentially costly failures in real-world settings. We formulate this problem as a quality diversity (QD) problem, where the goal is to discover diverse failure scenarios by simultaneously exploring both environments and human actions. We focus on the shared autonomy domain, where the robot attempts to infer the goal of a human operator, and adopt the QD algorithm MAP-Elites to generate scenarios for two published algorithms in this domain: shared autonomy via hindsight optimization and linear policy blending. Some of the generated scenarios confirm previous theoretical findings, while others are surprising and bring about a new understanding of state-of-the-art implementations. Our experiments show that MAP-Elites outperforms Monte-Carlo simulation and optimization based methods in effectively searching the scenario space, highlighting its promise for automatic evaluation of algorithms in human-robot interaction.}
+}
+
+@inproceedings{dennler2021personalizing,
+    author={Dennler, Nathaniel and Yunis, Catherine and Realmuto, Jonathan and Sanger, Terence and Nikolaidis, Stefanos and Matarić, Maja},
+    booktitle={2021 30th IEEE International Conference on Robot Human Interactive Communication (RO-MAN)},
+     title={Personalizing User Engagement Dynamics in a Non-Verbal Communication Game for Cerebral Palsy},
+    year={2021},
+    pages={873-879},
+    doi={10.1109/RO-MAN50785.2021.9515466},
+    abstract={Children and adults with cerebral palsy (CP) can have involuntary upper limb movements as a consequence of the symptoms that characterize their motor disability, leading to difficulties in communicating with caretakers and peers. We describe how a socially assistive robot may help individuals with CP to practice non-verbal communicative gestures using an active orthosis in a one-on-one number-guessing game. We performed a user study and data collection with participants with CP; we found that participants preferred an embodied robot over a screen-based agent, and we used the participant data to train personalized models of participant engagement dynamics that can be used to select personalized robot actions. Our work highlights the benefit of personalized models in the engagement of users with CP with a socially assistive robot and offers design insights for future work in this area.}
 }
 
 @article{tang2021learning,
