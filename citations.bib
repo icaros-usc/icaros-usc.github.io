@@ -31,6 +31,17 @@
     abstract={Learning control policies that are safe, robust and interpretable are prominent challenges in developing robotic systems. Learning-from-demonstrations with formal logic is an arising paradigm in reinforcement learning to estimate rewards and extract robot control policies that seek to overcome these challenges. In this approach, we assume that mission-level specifications for the robotic system are expressed in a suitable temporal logic such as Signal Temporal Logic (STL). The main idea is to automatically infer rewards from user demonstrations (that could be suboptimal or incomplete) by evaluating and ranking them w.r.t. the given STL specifications. In contrast to existing work that focuses on deterministic environments and discrete state spaces, in this letter, we propose significant extensions that tackle stochastic environments and continuous state spaces.}
 }
 
+@article{fontaine2021differentiable,
+  title={Differentiable Quality Diversity},
+  author={Matthew C. Fontaine and Stefanos Nikolaidis},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2021},
+  month={June},
+  url={https://arxiv.org/abs/2106.03894},
+  journal={CoRR},
+  abstract={Quality diversity (QD) is a growing branch of stochastic optimization research that studies the problem of generating an archive of solutions that maximize a given objective function but are also diverse with respect to a set of specified measure functions. However, even when these functions are differentiable, QD algorithms treat them as "black boxes", ignoring gradient information. We present the differentiable quality diversity (DQD) problem, a special case of QD, where both the objective and measure functions are first order differentiable. We then present MAP-Elites via Gradient Arborescence (MEGA), a DQD algorithm that leverages gradient information to efficiently explore the joint range of the objective and measure functions. Results in two QD benchmark domains and in searching the latent space of a StyleGAN show that MEGA significantly outperforms state-of-the-art QD algorithms, highlighting DQD's promise for efficient quality diversity optimization when gradient information is available.},
+}
+
 @inproceedings{dennler2021combing,
   author={Dennler, Nathaniel and Shin, Eura and Matarić, Maja and Nikolaidis, Stefanos},
   booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
@@ -112,19 +123,6 @@
   year={2021},
   month={February},
   abstract={Generative adversarial networks (GANs) are quickly becoming a ubiquitous approach to procedurally generating video game levels. While GAN generated levels are stylistically similar to human-authored examples, human designers often want to explore the generative design space of GANs to extract interesting levels. However, human designers find latent vectors opaque and would rather explore along dimensions the designer specifies, such as number of enemies or obstacles. We propose using state-of-the-art quality diversity algorithms designed to optimize continuous spaces, i.e. MAP-Elites with a directional variation operator and Covariance Matrix Adaptation MAP-Elites, to efficiently explore the latent space of a GAN to extract levels that vary across a set of specified gameplay measures. In the benchmark domain of Super Mario Bros, we demonstrate how designers may specify gameplay measures to our system and extract high-quality (playable) levels with a diverse range of level mechanics, while still maintaining stylistic similarity to human authored examples. An online user study shows how the different mechanics of the automatically generated levels affect subjective ratings of their perceived difficulty and appearance.}
-}
-
-@article{fontaine2021differentiable,
-  title={Differentiable Quality Diversity},
-  author={Matthew C. Fontaine and Stefanos Nikolaidis},
-  year={2021},
-  month={June},
-  url={https://arxiv.org/abs/2106.03894},
-  journal={CoRR},
-  volume={abs/2012.04283},
-  archivePrefix={arXiv},
-  eprint={2012.04283},
-  abstract={Quality diversity (QD) is a growing branch of stochastic optimization research that studies the problem of generating an archive of solutions that maximize a given objective function but are also diverse with respect to a set of specified measure functions. However, even when these functions are differentiable, QD algorithms treat them as "black boxes", ignoring gradient information. We present the differentiable quality diversity (DQD) problem, a special case of QD, where both the objective and measure functions are first order differentiable. We then present MAP-Elites via Gradient Arborescence (MEGA), a DQD algorithm that leverages gradient information to efficiently explore the joint range of the objective and measure functions. Results in two QD benchmark domains and in searching the latent space of a StyleGAN show that MEGA significantly outperforms state-of-the-art QD algorithms, highlighting DQD's promise for efficient quality diversity optimization when gradient information is available.},
 }
 
 @article{chen2020trust,
