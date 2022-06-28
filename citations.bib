@@ -1,5 +1,24 @@
 % ICAROS Lab Publications
 
+@article{zhang2021dsame,
+  author    = {Yulun Zhang and
+               Matthew C. Fontaine and
+               Amy K. Hoover and
+               Stefanos Nikolaidis},
+  title     = {Deep Surrogate Assisted MAP-Elites for Automated Hearthstone Deckbuilding},
+  journal   = {CoRR},
+  volume    = {abs/2112.03534},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2112.03534},
+  eprinttype = {arXiv},
+  eprint    = {2112.03534},
+  timestamp = {Mon, 13 Dec 2021 17:51:48 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2112-03534.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {We study the problem of efficiently generating high-quality and diverse content in games. Previous work on automated deckbuilding in Hearthstone shows that the quality diversity algorithm MAP-Elites can generate a collection of high-performing decks with diverse strategic gameplay. However, MAP-Elites requires a large number of expensive evaluations to discover a diverse collection of decks. We propose assisting MAP-Elites with a deep surrogate model trained online to predict game outcomes with respect to candidate decks. MAP-Elites discovers a diverse dataset to improve the surrogate model accuracy, while the surrogate model helps guide MAP-Elites towards promising new content. In a Hearthstone deckbuilding case study, we show that our approach improves the sample efficiency of MAP-Elites and outperforms a model trained offline with random decks, as well as a linear surrogate model baseline, setting a new state-of-the-art for quality diversity approaches in automated Hearthstone deckbuilding. We include the source code for all the experiments at: https://github.com/icaros-usc/EvoStone2.
+  }
+}
+
 @misc{tjanaka2022approximating,
   title         = {Approximating Gradients for Differentiable Quality Diversity
                    in Reinforcement Learning},
