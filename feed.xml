@@ -5,7 +5,7 @@
   <link rel="self" type="application/atom+xml"
         href="https://icaros.usc.edu/feed.xml" />
   <link rel="alternate" type="text/html" href="https://icaros.usc.edu/" />
-  <updated>2026-05-11T20:50:17Z</updated>
+  <updated>2026-05-11T22:11:26Z</updated>
   <id>https://icaros.usc.edu/</id>
   <author>
     <name>ICAROS</name>
@@ -22,6 +22,45 @@
     <updated>2021-06-21T20:00:00Z</updated>
     <id>https://icaros.usc.edu/blog/overcooked-lsi/</id>
     <content type="html">&lt;p&gt;Head over to &lt;a href=&quot;https://overcooked-lsi.github.io/&quot;&gt;https://overcooked-lsi.github.io&lt;/a&gt; to learn more!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Approximating Gradients for Differentiable Quality Diversity in Reinforcement Learning</title>
+    <link href="https://icaros.usc.edu/blog/dqdrl/"/>
+    <author>
+      <name>B. Tjanaka, M. C. Fontaine, J. Togelius, S. Nikolaidis</name>
+      <uri></uri>
+    </author>
+    <summary>We propose two variants of the current state-of-the-art DQD algorithm that compute gradients via approximation methods common in reinforcement learning (RL). Evaluation on simulated locomotion tasks indicates our method to achieve comparable performance compared to state-of-the-art.</summary>
+    <updated>2022-02-08T20:00:00Z</updated>
+    <id>https://icaros.usc.edu/blog/dqdrl/</id>
+    <content type="html">&lt;p&gt;Head over to &lt;a href=&quot;https://dqd-rl.github.io/&quot;&gt;https://dqd-rl.github.io/&lt;/a&gt; to learn more!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Deep Surrogate Assisted Generation of Environments</title>
+    <link href="https://icaros.usc.edu/blog/dsage/"/>
+    <author>
+      <name>V. Bhatt*, B. Tjanaka*, M. C. Fontaine*, S. Nikolaidis</name>
+      <uri></uri>
+    </author>
+    <summary>We propose Deep Surrogate Assisted Generation of Environments (DSAGE), a sample-efficient QD environment generation algorithm that maintains a deep surrogate model for predicting agent behaviors in new environments.</summary>
+    <updated>2022-06-09T20:00:00Z</updated>
+    <id>https://icaros.usc.edu/blog/dsage/</id>
+    <content type="html">&lt;p&gt;Head over to &lt;a href=&quot;https://dsagepaper.github.io/&quot;&gt;https://dsagepaper.github.io/&lt;/a&gt; to learn more!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Discount Model Search for Quality Diversity Optimization in High-Dimensional Measure Spaces</title>
+    <link href="https://icaros.usc.edu/blog/discount-models/"/>
+    <author>
+      <name>B. Tjanaka, H. Chen, M. Fontaine, and S. Nikolaidis</name>
+      <uri></uri>
+    </author>
+    <summary>We propose Discount Model Search (DMS), which guides CMA-MAE exploration with a model that provides a smooth, continuous representation of discount values. DMS works well in high dimensional measure spaces, outperforming CMA-MAE and other existing black-box QD algorithms.</summary>
+    <updated>2026-04-25T20:00:00Z</updated>
+    <id>https://icaros.usc.edu/blog/discount-models/</id>
+    <content type="html">&lt;p&gt;Head over to &lt;a href=&quot;https://discount-models.github.io/&quot;&gt;https://discount-models.github.io/&lt;/a&gt; to learn more!&lt;/p&gt;
 </content>
   </entry>
 </feed>
